@@ -1,8 +1,8 @@
 ﻿#include<stdio.h>
 #include<stdlib.h>
 typedef struct number {
-	int mu;  //保存分子
-	int zi;     //保存分母
+	int zi;  //保存
+	int mu;     //保存分母
 }Number;
 
 
@@ -52,8 +52,8 @@ void calculate(char signal, Number *left, Number *right) {  // 计算函数并�
 }
 
 void main() {
-	Number num1 = { 1,2 }, num2 = { 3 , 2 };
-	calculate('+', &num1, &num2);
-	printf("%d/%d", num1.zi.num1.mu);
+	Number num1 = { 13,2 }, num2 = { 4 , 3 };
+	calculate('*', &num1, &num2);
+	printf("%d/%d", num1.zi,num1.mu);
 }
 
